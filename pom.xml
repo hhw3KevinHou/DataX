@@ -45,7 +45,14 @@
         <module>common</module>
         <module>core</module>
         <module>transformer</module>
+        <!-- common support module -->
+        <module>plugin-rdbms-util</module>
+        <module>plugin-unstructured-storage-util</module>
 
+
+        <module>gaussdbreader</module>
+        <module>gaussdbwriter</module>
+        <module>datax-example</module>
         <!-- reader -->
         <module>mysqlreader</module>
         <module>drdsreader</module>
@@ -127,13 +134,10 @@
         <module>adbmysqlwriter</module>
         <module>sybasewriter</module>
         <module>neo4jwriter</module>
-        <!-- common support module -->
-        <module>plugin-rdbms-util</module>
-        <module>plugin-unstructured-storage-util</module>
-        <module>gaussdbreader</module>
-        <module>gaussdbwriter</module>
-        <module>datax-example</module>
 
+
+        <module>hivereader</module>
+        <module>hivewriter</module>
     </modules>
 
     <dependencyManagement>
@@ -274,6 +278,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2-beta-3</version>
                 <configuration>
                     <finalName>datax</finalName>
                     <descriptors>

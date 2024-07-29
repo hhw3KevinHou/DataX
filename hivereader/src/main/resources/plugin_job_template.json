@@ -1,0 +1,11 @@
+{
+  "name": "hivereader",
+  "parameter": {
+    "defaultFS": "hdfs://:",
+    "hiveJdbcUrl": "jdbc:hive2://",
+    "username": "hive",
+    "hiveSql": [
+      "select id,username,password from default.t_user;"
+    ]
+  }
+}
